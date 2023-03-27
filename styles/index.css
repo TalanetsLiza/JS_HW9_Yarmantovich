@@ -1,0 +1,90 @@
+body {
+    font-family: 'Yellowtail', cursive;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.form__header {
+    padding: 20px;
+    background: rgba(223, 238, 182, 1);
+    color:rgb(51, 46, 46);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2.4px;
+    display: flex;
+    align-items: center;
+}
+
+.form__clear {
+    border: none;
+    background:  rgb(242, 253, 209);
+    margin-left: auto;
+    padding: 7px;
+    border: 1px solid rgba(56, 55, 55, 0.363);
+    border-radius: 5px;
+    font-family: 'Yellowtail', cursive;
+}
+
+.form__clear:hover {
+    opacity: 0.7 ;
+}
+
+.form__clear:active {
+    opacity: 0.7;
+}
+
+.form__main {
+    width: 300px;
+}
+
+.form__input {
+    padding: 20px;
+    background-color: rgb(242, 253, 209);
+    color:rgb(56, 53, 53);
+    width: 459px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    font-family: 'Yellowtail', cursive;
+    margin: 0 auto;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    margin: 0 auto;
+    padding: 24px;
+    box-sizing: border-box;
+    background-color: #DFEEB6;
+}
+
+.todo__checkbox:checked + .todo__text {
+    text-decoration: line-through;
+}
+
+.todo__text {
+    margin-left: 24px;
+}
+
+.todo__edit-icon {
+    margin-left: auto;
+    background-image: url("../images/icon-edit.svg");
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
